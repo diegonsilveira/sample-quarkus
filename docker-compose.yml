@@ -1,0 +1,20 @@
+version: '3'
+
+networks:
+  docker-network:
+    driver: bridge
+
+services:
+  postgres:
+    image: sameersbn/postgresql:10-1
+    restart: always
+    container_name: postgres
+    networks:
+      - docker-network
+    environment:
+      DB_NAME: postgres
+      DB_USER: postgres
+      DB_PASS: postgres
+      PG_PASSWORD: samples@123
+    ports: 
+      - 5432:5432
