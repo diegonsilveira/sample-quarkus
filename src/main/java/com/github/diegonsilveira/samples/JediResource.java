@@ -1,4 +1,4 @@
-package com.github.diegonsilveira.hibernate;
+package com.github.diegonsilveira.samples;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/")
+@Path("/jedis")
 public class JediResource {
 
 	@Inject EntityManager entityManager;
@@ -24,27 +24,27 @@ public class JediResource {
     }
 	
 	@GET
-	@Path("/jedis")
+	@Path("/")
 	@Produces(value = MediaType.APPLICATION_JSON)
 	public List<Jedi> getJedis() {
 		return entityManager.createQuery("select j from Jedi j", Jedi.class).getResultList();
 	}
 	
 	@GET
-	@Path("/jedis-repo")
+	@Path("/repo")
 	@Produces(value = MediaType.APPLICATION_JSON)
 	public List<Jedi> getJedisRepo() {
 		return repo.findAll();
 	}
 	
     @DELETE
-    @Path("jedis-repo/{id}")
+    @Path("/repo/{id}")
     public void delete(@PathParam(value = "id") Integer id) {
         repo.deleteById(id);
     }
 
     @POST
-    @Path("/jedis-repo/{id}")
+    @Path("/repo/{id}")
     @Produces("application/json")
     public void create(@PathParam(value = "id") Integer id, Jedi body) {
     	Jedi jedi = new Jedi();
@@ -55,10 +55,4 @@ public class JediResource {
         repo.save(jedi);
     }
 	
-	@GET
-	@Path("/movies")
-	@Produces(value = MediaType.APPLICATION_JSON)
-	public List<Movie> getMovies() {
-		return entityManager.createQuery("select m from Movie m", Movie.class).getResultList();
-	}
 }

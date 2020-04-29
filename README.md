@@ -1,3 +1,34 @@
+# Endpoints
+
+*http://localhost:8080/jedis* - Endpoint of Jedi using javax.ws.rs packages (GET, POST, DELETE);
+
+*http://localhost:8080/movies* - Endpoint of movies using spring classes (GET, POST, DELETE);
+
+*http://localhost:8080/health/live* - HealthCheck sample;
+
+*http://localhost:8180/* - Keycloak;
+
+# Keycloak
+
+* docker pull jboss/keycloak
+* docker run -d -p 8180:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # getting-started project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.

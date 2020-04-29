@@ -1,4 +1,4 @@
-package com.github.diegonsilveira.hibernate;
+package com.github.diegonsilveira.samples;
 
 import java.util.ArrayList;
 import java.util.List;
