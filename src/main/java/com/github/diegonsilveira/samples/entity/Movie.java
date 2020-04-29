@@ -1,4 +1,4 @@
-package com.github.diegonsilveira.samples;
+package com.github.diegonsilveira.samples.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

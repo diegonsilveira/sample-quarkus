@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.github.diegonsilveira.samples.entity.Movie;
+import com.github.diegonsilveira.samples.entity.MovieRepository;
+
 @RestController
 @RequestMapping("/movies")
 public class MovieController {

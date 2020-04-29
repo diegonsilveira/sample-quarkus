@@ -1,9 +1,9 @@
-/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/MovieRepository.java
 /home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/health/VerifyHealth2.java
+/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/entity/JediRepository.java
 /home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/MovieController.java
-/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/Movie.java
-/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/JediRepository.java
-/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/SecurityResource.java
+/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/MovieSecuredResource.java
+/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/entity/Jedi.java
+/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/entity/Movie.java
 /home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/JediResource.java
 /home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/health/VerifyHealth.java
-/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/Jedi.java
+/home/diego/Documentos/GitHub/Quarkus/getting-started/src/main/java/com/github/diegonsilveira/samples/entity/MovieRepository.java

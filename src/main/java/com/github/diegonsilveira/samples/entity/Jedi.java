@@ -1,4 +1,4 @@
-package com.github.diegonsilveira.samples;
+package com.github.diegonsilveira.samples.entity;
 
 import java.util.ArrayList;
 import java.util.List;

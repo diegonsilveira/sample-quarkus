@@ -1,61 +1,26 @@
+# Application
+
+Executar aplicação: `./mvnw compile quarkus:dev -Dquarkus.profile=dev`.
+
+Gerar pacotes: `./mvnw package`.
+
+Executar pacote: `java -jar getting-started-1.0-SNAPSHOT-runner.jar`.
+
+Gerar pacote nativo: `./mvnw clean package -Pnative`.
+
+Extensões adicionadas: `./mvnw quarkus:add-extension -Dextension="hibernate-orm, jdbc-postgres, resteasy-jsonb, jwt, spring-web, health, spring-data-jpa, quarkus-smallrye-openapi"`.
+
+
 # Endpoints
 
 *http://localhost:8080/jedis* - Endpoint of Jedi using javax.ws.rs packages (GET, POST, DELETE);
 
 *http://localhost:8080/movies* - Endpoint of movies using spring classes (GET, POST, DELETE);
 
+*http://localhost:8080/secured* - Security endpoint of Movies using javax.ws.rs packages (GET);
+
 *http://localhost:8080/health/live* - HealthCheck sample;
 
-*http://localhost:8180/* - Keycloak;
+*http://localhost:8080/swagger-ui/* - Swagger UI
 
-# Keycloak
-
-* docker pull jboss/keycloak
-* docker run -d -p 8180:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# getting-started project
-
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
-
-## Running the application in dev mode
-
-You can run your application in dev mode that enables live coding using:
-```
-./mvnw quarkus:dev
-```
-
-## Packaging and running the application
-
-The application can be packaged using `./mvnw package`.
-It produces the `getting-started-1.0-SNAPSHOT-runner.jar` file in the `/target` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
-
-The application is now runnable using `java -jar target/getting-started-1.0-SNAPSHOT-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using: `./mvnw package -Pnative`.
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: `./mvnw package -Pnative -Dquarkus.native.container-build=true`.
-
-You can then execute your native executable with: `./target/getting-started-1.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+*http://localhost:8080/openapi/* - OpenApi
