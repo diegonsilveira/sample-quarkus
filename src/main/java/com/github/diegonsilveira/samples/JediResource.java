@@ -12,7 +12,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/jedis")
+@Path("/public/jedis")
 public class JediResource {
 
 	@Inject EntityManager entityManager;
