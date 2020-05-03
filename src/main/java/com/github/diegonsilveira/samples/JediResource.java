@@ -21,7 +21,7 @@ public class JediResource {
 	@Inject EntityManager entityManager;
 	
     private final JediRepository repo;
-
+    
     public JediResource(JediRepository repo) {
         this.repo = repo;
     }
@@ -57,5 +57,5 @@ public class JediResource {
     	
         repo.save(jedi);
     }
-	
+    	
 }
