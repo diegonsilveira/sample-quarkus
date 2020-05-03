@@ -11,6 +11,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.ResponseBuilder;
 
 import com.github.diegonsilveira.samples.entity.Jedi;
 import com.github.diegonsilveira.samples.entity.JediRepository;
@@ -49,13 +51,15 @@ public class JediResource {
     @POST
     @Path("/repo/{id}")
     @Produces("application/json")
-    public void create(@PathParam(value = "id") Integer id, Jedi body) {
+    public ResponseBuilder create(@PathParam(value = "id") Integer id, Jedi body) {
     	Jedi jedi = new Jedi();
     	jedi.setId(id);
     	jedi.setGender(body.getGender());
     	jedi.setName(body.getName());
     	
         repo.save(jedi);
+        
+        return Response.ok();
     }
     	
 }
