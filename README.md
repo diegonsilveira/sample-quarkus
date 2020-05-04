@@ -38,6 +38,14 @@ Extensões adicionadas: `./mvnw quarkus:add-extension -Dextension="hibernate-orm
 
 *http://localhost:8080/config/* - Spring Properties example
 
+### Jaeger
+
+Imagem:
+
+```
+docker run -p 5775:5775/udp -p 6831:6831/udp -p 6832:6832/udp -p 5778:5778 -p 16686:16686 -p 14268:14268 jaegertracing/all-in-one:latest
+```
+
 *http://localhost:16686/trace/* - Jaeger
 
 # Links
